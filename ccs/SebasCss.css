@@ -88,3 +88,58 @@ body {
     z-index: -1;
     opacity: 0.5;
 }
+
+.especialidades-section {
+    padding: 100px 5%;
+    background-color: #121212;
+}
+
+.container-servicios {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.titulo-seccion {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.tabla-precios {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.servicio-info {
+    padding: 25px 0;
+}
+
+.nombre-servicio {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.descripcion-servicio {
+    color: #888;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.precio {
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ffcc; /* Color neón aplicado a los precios */
+    width: 100px;
+}
+
+tr {
+    border-bottom: 1px solid #222; /* Línea separadora sutil */
+}
+
+tr:last-child {
+    border-bottom: none; /* Quitar línea en el último servicio */
+}
