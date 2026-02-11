@@ -14,12 +14,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 15px 5%;
     background: #000;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.5.5rem;
     font-weight: bold;
 }
 
@@ -82,7 +82,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 105%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
@@ -196,4 +196,42 @@ tr:last-child {
 .galeria-item:hover img {
     transform: scale(1.1); 
     opacity: 1; 
+}
+
+footer {
+    text-align: center;
+    padding: 50px 20px 100px 20px;
+    background: #080808;
+    border-top: 1px solid #222;
+}
+
+.redes { margin: 20px 0; }
+.redes a {
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+}
+.redes a:hover { background: white; color: black; }
+.copyright { font-size: 0.7rem; color: #555; margin-top: 20px; }
+
+.boton-flotante {
+    position: fixed;
+    bottom: 50px;
+    left: 5%;
+    width: 90%;
+    background-color: var(--color-neon);
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    z-index: 2000;
+    font-size: 1.1rem;
+    border-radius: 4px;
 }
