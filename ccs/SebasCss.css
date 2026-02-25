@@ -9,17 +9,8 @@ body {
     color: #00ffcc; 
 }
 
-
-.navbar {   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    background: #000;
-}
-
 .logo {
-    font-size: 1.5.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -32,7 +23,7 @@ body {
 .menu a {
     color: white;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 .btn-reservar-nav {
@@ -82,7 +73,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 105%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
@@ -97,6 +88,20 @@ body {
 .container-servicios {
     max-width: 800px;
     margin: 0 auto;
+}
+
+nav{   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #000;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    box-sizing: border-box; 
+    z-index: 9999; 
 }
 
 .titulo-seccion {
@@ -232,6 +237,9 @@ footer {
     text-decoration: none;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     z-index: 2000;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     border-radius: 4px;
+}
+html {
+    scroll-behavior: smooth;
 }

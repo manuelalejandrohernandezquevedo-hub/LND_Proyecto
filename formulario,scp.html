@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva - SBS LAB</title>
+    <link rel="stylesheet" href="ccs/formulario.css"> 
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SBS <span class="text">LAB</span></div>
+        <ul class="menu">
+            <li><a href="Proyecto BarberSebas.html">Inicio</a></li>
+            <li><a href="Proyecto BarberSebas.html">Cortes</a></li>
+            <li><a href="Proyecto BarberSebas.html">Mis Cortes</a></li>
+        </ul>
+    </nav>
+
+    <section id="formulario-reserva" class="seccion-formulario">
+        <div class="contenedor-form">
+            <span class="cerrar-form" id="btn-cerrar">&times;</span>
+            <h2 class="titulo-seccion">Reserva tu cita</h2>
+            <p style="color: #888; margin-bottom: 30px;">Déjanos tus datos y te confirmaremos el cambio.</p>
+            
+            <form class="form-sencillo" id="reserva-form">
+                <input type="text" id="nombre" placeholder="Tu Nombre completo" required>
+                <input type="tel" id="telefono" placeholder="Número de teléfono" required>
+                <select id="servicio" required>
+                    <option value="" disabled selected>¿Qué servicio buscas?</option>
+                    <option value="corte">Corte de Pelo</option>
+                    <option value="barba">Arreglo de Barba</option>
+                    <option value="completo">Corte + Barba</option>
+                </select>
+                <input type="date" id="fecha" required>
+                <button type="submit" class="btn-enviar">Confirmar Reserva</button>
+            </form>
+            
+            <div id="mensaje-confirmacion" style="display: none; color: #00ffcc; margin-top: 20px; font-weight: bold;">
+                ¡Has reservado tu cita correctamente!
+            </div>
+        </div>
+    </section>
+
+    <script src="ccs/formulario.js"></script>
+</body>
+</html>
