@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> SBS LAB | Barbería Studio</title>
     <link href="ccs/SebasCss.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="formulario,scp.html" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -21,11 +21,14 @@
     </nav>
 
     <header id="inicio" class="pelo">
+        <div class="video-overlay"></div>
+        <video src="Img y vdo/video fondo.mp4" autoplay muted loop playsinline></video>
+        
         <div class="pelo-content">
             <h1>NO PIDAS PERMISO,<br>PIDE, EL <span class="text">CORTE</span></h1>
             <p>⚠️ CUIDADITO: ALTA PROBABILIDAD DE LIARLA HOY ⚠️</p>
-            <a href="#formulario-reserva" class="btn-grande">QUIERO EL CAMBIO</a>
-            <video src="Img y vdo/video fondo.mp4" autoplay muted loop></video>
+            
+            <a href="#" class="btn-grande">QUIERO EL CAMBIO</a>
         </div>
     </header>
 
@@ -95,6 +98,31 @@
             </div>
         </div>
     </section>
+
+    <div id="modalReserva" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>RESERVA TU <span class="text">CITA</span></h2>
+        <form id="form-cita">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="tel" placeholder="Tu WhatsApp (ej: 657...)" required>
+            
+            <div class="form-row">
+                <input type="date" required>
+                <input type="time" min="09:00" max="21:00" required>
+            </div>
+            
+            <select required>
+                <option value="" disabled selected>Selecciona el servicio</option>
+                <option value="corte">Corte (12€)</option>
+                <option value="corte-barba">Corte + Barba (17€)</option>
+                <option value="freestyle">Freestyle / Diseño (+2€)</option>
+            </select>
+            
+            <button type="submit" class="btn-grande">CONFIRMAR CITA</button>
+        </form>
+    </div>
+</div>
 
     <footer>
         <h3>SBS LAB BARBERSHOP</h3>
